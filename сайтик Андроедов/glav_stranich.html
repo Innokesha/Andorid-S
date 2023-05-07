@@ -1,0 +1,125 @@
+<! DOCKTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Komnata.ru</title>
+<link rel="stylesheet" type="text/css" href="1.css">
+<link rel="icon" href="logo_last.ico" type="image/x-icon">
+<script type="text/javgascript" src="jquery-3.3.1.min/js"></script>
+<script type="text/javgascript" src="script"></script>
+</head>
+<body>
+<div id="head1"><div class="hed1"><div class="logog"><img src="logo_last.png" widht="64px" height="64px"></div><div class="name_1">комната.ру</div></div></div>
+
+
+
+</br></br></br></br></br><div  id="article">
+
+</br><div class="import">Дай данные от комнаты
+</br>
+	<select  id="style">
+	 	<option value="0">Выберите стиль комнаты</option>
+	 	<option value="1" id="min">Минимализм</option>
+	 	<option value="2" id="indust">Индустриальный</option>
+	 	<option value="3" id="country">Кантри</option>
+	</select>
+	<select id="room">
+	 	<option value="0">Выберите комнату</option>
+	 	<option value="1" id="kitchen">Кухня</option>
+	 	<option value="2" id="bedroom">Спальня</option>
+	 	<option value="3" id="bathroom">Ванная</option>
+	</select>
+	</br>
+	<button onclick="show_img()">Получить дизайн комнаты</button>
+
+</div>
+	
+</br><div class="result" id="res"> вот результат </div>
+<script>
+	function show_img(){
+		if((style.value=="1") && (room.value=="1")){
+			let r1=Math.floor(Math.random() * 50);
+			let img = new Image();
+			img.src='dataset/minimalistic/kitchen/'+r1+'.jpg';
+			img.style='margin:25px;position:absolute;'
+			img.height=240;
+			img.width=240;
+			document.getElementById("res").appendChild(img);
+		}
+		if((style.value=="1") && (room.value=="2")){
+			let r1=Math.floor(Math.random() * 73);
+			let img = new Image();
+			img.src='dataset/minimalistic/bedroom/'+r1+'.jpg';
+			img.height=240;
+			img.style='margin:25px;position:absolute;'
+			img.width=240;
+			document.getElementById("res").appendChild(img);
+		}
+		if((style.value=="1") && (room.value=="3")){
+			let r1=Math.floor(Math.random() * 52);
+			let img = new Image();
+			img.src='dataset/minimalistic/bathroom/'+r1+'.jpg';
+			img.height=240;
+			img.style='margin:10px;position:absolute;'
+			img.width=240;
+			document.getElementById("res").appendChild(img);
+		}
+		if((style.value=="2") && (room.value=="1")){
+			let r1=Math.floor(Math.random() * 30);
+			let img = new Image();
+			img.src='dataset/industrial/kitchen/'+r1+'.jpg';
+			img.height=240;
+			img.width=240;
+			img.style='margin:25px;position:absolute;'
+			document.getElementById("res").appendChild(img);
+		}
+		if((style.value=="2") && (room.value=="2")){
+			let r1=Math.floor(Math.random() * 19);
+			let img = new Image();
+			img.src='dataset/industrial/bedroom/'+r1+'.jpg';
+			img.height=240;
+			img.width=240;
+			img.style='margin:25px;position:absolute;'
+			document.getElementById("res").appendChild(img);
+		}
+		if((style.value=="2") && (room.value=="3")){
+			let r1=Math.floor(Math.random() * 50);
+			let img = new Image();
+			img.src='dataset/industrial/bathroom/'+r1+'.jpg';
+			img.height=240;
+			img.width=240;
+			img.style='margin:25px;position:absolute;'
+			document.getElementById("res").appendChild(img);
+		}
+		if((style.value=="3") && (room.value=="1")){
+			let r1=Math.floor(Math.random() * 30);
+			let img = new Image();
+			img.src='dataset/country/kitchen/'+r1+'.jpg';
+			img.height=240;
+			img.width=240;
+			img.style='margin:25px;position:absolute;'
+			document.getElementById("res").appendChild(img);
+		}
+		if((style.value=="3") && (room.value=="2")){
+			let r1=Math.floor(Math.random() * 22);
+			let img = new Image();
+			img.src='dataset/country/bedroom/'+r1+'.jpg';
+			img.height=240;
+			img.width=240;
+			img.style='margin:25px;position:absolute;'
+			document.getElementById("res").appendChild(img);
+		}
+		if((style.value=="3") && (room.value=="3")){
+			let r1=Math.floor(Math.random() * 24);
+			let img = new Image();
+			img.src='dataset/country/bathroom/'+r1+'.jpg';
+			img.height=240;
+			img.width=240;
+			img.style='margin:25px;position:absolute;'
+			document.getElementById("res").appendChild(img);
+		}
+	}
+
+</script>
+</body>
+</html>

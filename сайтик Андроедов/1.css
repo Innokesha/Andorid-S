@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "GothamPro-Black";
+  font-style: normal;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("fonts/GothamPro-Black")
+}   
+body{
+background-color:#3D598F;
+font-family: "GothamPro-Light", "Arial", sans-serif;
+}
+.hed1{
+border-top:1px solid #000000;
+border-right:1px solid #000000;
+border-left:1px solid #000000;
+border-bottom:1px solid #000000;
+background-color:#7395DB;
+height:8%;
+width:100%;
+text-align:left;
+font-size:33pt;
+color:#000000;
+float:left;
+border-radius:15px;
+}
+
+.logog{
+margin-top:5px;
+margin-left:3px;
+float:left;
+}
+
+.name_1{
+margin-top:10px;
+
+}
+
+#article{
+border-top:1px solid #000000;
+border-right:1px solid #000000;
+border-left:1px solid #000000;
+border-bottom:1px solid #000000;
+background-color:#7395DB;
+height:91%;
+width:100%;
+text-align:left;
+font-size:17pt;
+border-radius:15px;
+}
+
+.import{
+background-color:#72B6DB;
+width:70%;
+height:30%;
+margin-left:15%;
+text-align:center;
+border-radius:15px;
+}
+.result{
+background-color:#637F8F;
+width:70%;
+height:50%;
+margin-left:15%;
+text-align:center;
+border-radius:15px;
+}
+
+
